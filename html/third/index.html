@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3rd Person Camera</title>
+  <style>
+    html,
+    body {
+      padding: 0;
+      margin: 0;
+      font-size: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    }
+    body * {
+      font-size: initial;
+    }
+    canvas {
+      width: 100vw;
+      height: 100vh;
+    }
+    #info {
+      background-color: rgba(0, 0, 0, 0.75);
+      position: fixed;
+      top: 0;
+      left: 0;;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      z-index: 100;
+      display: flex;
+      color: #fff;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+      transition: opacity 500ms ease;
+    }
+    #info.out {
+      opacity: 0;
+    }
+    a, span {
+      color: #2affea;
+    }
+  </style>
+</head>
+<body>
+  <div id="info">
+    <div>
+      <p>This is a 3rd person perspective camera on the "player".</p>
+      <p><span>Click</span> to enable control. Use <span>W, A, S, D</span> to move. Use <span>Space</span> to jump.</p>
+    </div>
+  </div>
+  <script defer="defer" src="bundle.third.js"></script>
+</body>
+</html>
