@@ -1,4 +1,4 @@
-3D-playground
+3d-playground
 =============
 
 > Once a day unlearn something new.
